@@ -1,0 +1,102 @@
+[gd_scene load_steps=15 format=3 uid="uid://drewnbd6lxvui"]
+
+[ext_resource type="Texture2D" uid="uid://cn1ds5u4fqgoh" path="res://brackeys_platformer_assets/sprites/coin.png" id="1_ojsku"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cibq"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3tob"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1h8l7"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1irx"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6w0r"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgxjn"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgpou"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(96, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yexdb"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(112, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_inbyc"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(128, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6p2w"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(144, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qlok"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(160, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsdu1"]
+atlas = ExtResource("1_ojsku")
+region = Rect2(176, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mrv1b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cibq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3tob")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1h8l7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1irx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6w0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgxjn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgpou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yexdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inbyc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6p2w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qlok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsdu1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mrv1b")
+autoplay = "default"
+frame_progress = 0.6574967
